@@ -1,5 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, MapPin, Phone } from "lucide-react";
+import logoIcon from "@/assets/komushana-icon.png.asset.json";
+
 
 export function SiteFooter() {
   return (
