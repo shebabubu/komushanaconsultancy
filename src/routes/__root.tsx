@@ -83,6 +83,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:site_name", content: "Komushana Consultancy" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "Komushana Consultancy" },
+      { name: "twitter:title", content: "Komushana Consultancy" },
+      { property: "og:description", content: "Organisational development and systems consultancy in Kampala, Uganda." },
+      { name: "twitter:description", content: "Organisational development and systems consultancy in Kampala, Uganda." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/fd04d0c4-ba7d-46d9-b190-25e469a34dfc/id-preview-ae722a0e--3acb1831-9427-4dec-b726-b0b2be3d7ae8.lovable.app-1782302766021.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/fd04d0c4-ba7d-46d9-b190-25e469a34dfc/id-preview-ae722a0e--3acb1831-9427-4dec-b726-b0b2be3d7ae8.lovable.app-1782302766021.png" },
     ],
     links: [
       {
