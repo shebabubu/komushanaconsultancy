@@ -1,6 +1,8 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logoIcon from "@/assets/komushana-icon.png.asset.json";
+
 
 const navItems = [
   { to: "/", label: "Home" },
