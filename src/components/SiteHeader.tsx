@@ -18,9 +18,13 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/85 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         <Link to="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
-          <span className="flex h-9 w-9 items-center justify-center rounded-md bg-navy font-serif text-lg font-bold text-primary-foreground">
-            K
-          </span>
+          <img
+            src={logoIcon.url}
+            alt="Komushana Consultancy logo"
+            width={40}
+            height={40}
+            className="h-9 w-9 object-contain"
+          />
           <span className="flex flex-col leading-none">
             <span className="font-serif text-base font-bold text-foreground">Komushana</span>
             <span className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground">Consultancy</span>
