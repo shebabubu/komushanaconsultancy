@@ -9,9 +9,13 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-6xl gap-10 px-6 py-14 md:grid-cols-4">
         <div className="md:col-span-2">
           <div className="flex items-center gap-2.5">
-            <span className="flex h-9 w-9 items-center justify-center rounded-md bg-gold font-serif text-lg font-bold text-gold-foreground">
-              K
-            </span>
+            <img
+              src={logoIcon.url}
+              alt="Komushana Consultancy logo"
+              width={40}
+              height={40}
+              className="h-9 w-9 rounded-md bg-primary-foreground/10 object-contain p-0.5"
+            />
             <span className="font-serif text-lg font-bold">Komushana Consultancy</span>
           </div>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-primary-foreground/70">
