@@ -70,7 +70,7 @@ function About() {
           </div>
           <img
             src={aboutImg}
-            alt="Komushana consultants collaborating with a client team on organisational systems in a Kampala office"
+            alt="A diverse team meeting around a boardroom table in a modern office"
             width={1200}
             height={1000}
             loading="lazy"
