@@ -39,8 +39,8 @@ export function SiteFooter() {
           <h4 className="text-sm font-semibold uppercase tracking-wider text-gold">Get in touch</h4>
           <ul className="mt-4 space-y-3 text-sm text-primary-foreground/75">
             <li className="flex items-start gap-2.5"><MapPin className="mt-0.5 h-4 w-4 shrink-0 text-gold" /> Kampala, Uganda</li>
-            <li className="flex items-start gap-2.5"><Mail className="mt-0.5 h-4 w-4 shrink-0 text-gold" /> hello@komushana.co.ug</li>
-            <li className="flex items-start gap-2.5"><Phone className="mt-0.5 h-4 w-4 shrink-0 text-gold" /> +256 700 000 000</li>
+            <li className="flex items-start gap-2.5"><Mail className="mt-0.5 h-4 w-4 shrink-0 text-gold" /> shebanahurira@gmail.com</li>
+            <li className="flex items-start gap-2.5"><Phone className="mt-0.5 h-4 w-4 shrink-0 text-gold" /> +256 752 973 828</li>
           </ul>
         </div>
       </div>

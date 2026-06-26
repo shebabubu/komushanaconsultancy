@@ -28,8 +28,8 @@ export const Route = createFileRoute("/contact")({
 
 const contactDetails = [
   { icon: MapPin, label: "Office", value: "Kampala, Uganda" },
-  { icon: Mail, label: "Email", value: "hello@komushana.co.ug" },
-  { icon: Phone, label: "Phone", value: "+256 700 000 000" },
+  { icon: Mail, label: "Email", value: "shebanahurira@gmail.com" },
+  { icon: Phone, label: "Phone", value: "+256 752 973 828" },
   { icon: Clock, label: "Hours", value: "Mon – Fri, 9:00 – 17:00 EAT" },
 ];
 
@@ -43,7 +43,7 @@ function Contact() {
     const body = encodeURIComponent(
       `Name: ${data.get("name")}\nOrganisation: ${data.get("org")}\nEmail: ${data.get("email")}\nService: ${data.get("service")}\n\n${data.get("message")}`,
     );
-    window.location.href = `mailto:hello@komushana.co.ug?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:shebanahurira@gmail.com?subject=${subject}&body=${body}`;
     setSent(true);
   }
 
@@ -85,7 +85,7 @@ function Contact() {
                 <h2 className="mt-5 text-2xl text-card-foreground">Thank you</h2>
                 <p className="mt-2 max-w-sm text-sm text-muted-foreground">
                   Your email client should have opened with your message. If not,
-                  reach us directly at hello@komushana.co.ug.
+                  reach us directly at shebanahurira@gmail.com.
                 </p>
               </div>
             ) : (
