@@ -61,7 +61,7 @@ function Home() {
         <div className="absolute inset-0 bg-gradient-to-br from-navy via-navy/85 to-navy-soft/70" />
         <div className="relative mx-auto max-w-6xl px-6 py-24 md:py-32">
           <span className="inline-block rounded-full border border-gold/40 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-gold">
-            Kampala · Organisational Development
+            Structure · Compliance · Sustainability
           </span>
           <h1 className="mt-6 max-w-3xl text-balance text-4xl leading-tight md:text-6xl">
             Building the foundations organisations need to grow.
