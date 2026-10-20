@@ -54,19 +54,19 @@ function About() {
       <section className="mx-auto max-w-6xl px-6 py-20">
         <div className="grid items-center gap-12 md:grid-cols-2">
           <div>
-            <p className="text-lg leading-relaxed text-foreground">
+            <p className="text-base leading-relaxed text-foreground">
               Komushana Consultancy is a Kampala-based organisational development
               and systems consultancy specialising in building the operational
               foundations that organisations need to run professionally, grow
               sustainably, and deliver results.
             </p>
-            <p className="mt-5 text-lg leading-relaxed text-foreground">
+            <p className="mt-5 text-base leading-relaxed text-foreground">
               We work with NGOs, community-based organisations, and growing
               businesses — particularly startups and SMEs — at the stage where
               they need to move from informal, founder-dependent operations to
               structured, system-driven institutions.
             </p>
-            <p className="mt-5 text-lg leading-relaxed text-foreground">
+            <p className="mt-5 text-base leading-relaxed text-foreground">
               That means we don't just advise — we build. We design and implement
               the actual systems, documents, frameworks, and governance
               structures that allow an organisation to function consistently and
