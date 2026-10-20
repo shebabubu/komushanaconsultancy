@@ -2,7 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Image as ImageIcon } from "lucide-react";
 import { PageLayout } from "@/components/PageLayout";
 import { clients, clientLogoUrl } from "@/data/clients";
-import aboutImg from "@/assets/about.jpg";
+import aboutImg from "@/assets/about-handover.jpg.asset.json";
+
+const SITE_URL = "https://komushanaconsultancy.lovable.app";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -21,7 +23,9 @@ export const Route = createFileRoute("/about")({
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/about" },
-      { property: "og:image", content: aboutImg },
+      { property: "og:image", content: `${SITE_URL}${aboutImg.url}` },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: `${SITE_URL}${aboutImg.url}` },
     ],
     links: [{ rel: "canonical", href: "/about" }],
   }),
@@ -56,13 +60,13 @@ function About() {
               foundations that organisations need to run professionally, grow
               sustainably, and deliver results.
             </p>
-            <p className="mt-5 leading-relaxed text-muted-foreground">
+            <p className="mt-5 text-lg leading-relaxed text-foreground">
               We work with NGOs, community-based organisations, and growing
               businesses — particularly startups and SMEs — at the stage where
               they need to move from informal, founder-dependent operations to
               structured, system-driven institutions.
             </p>
-            <p className="mt-5 leading-relaxed text-muted-foreground">
+            <p className="mt-5 text-lg leading-relaxed text-foreground">
               That means we don't just advise — we build. We design and implement
               the actual systems, documents, frameworks, and governance
               structures that allow an organisation to function consistently and
@@ -70,10 +74,10 @@ function About() {
             </p>
           </div>
           <img
-            src={aboutImg}
-            alt="A diverse team meeting around a boardroom table in a modern office"
+            src={aboutImg.url}
+            alt="Three colleagues presenting the DaWinçi HR Policy and Procedures Manual at its handover"
             width={1200}
-            height={1000}
+            height={928}
             loading="lazy"
             className="rounded-2xl border border-border object-cover shadow-[var(--shadow-elegant)]"
           />
