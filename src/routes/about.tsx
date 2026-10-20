@@ -77,7 +77,7 @@ function About() {
             src={aboutImg.url}
             alt="Three colleagues presenting the DaWinçi HR Policy and Procedures Manual at its handover"
             width={1200}
-            height={1600}
+            height={928}
             loading="lazy"
             className="rounded-2xl border border-border object-cover shadow-[var(--shadow-elegant)]"
           />
