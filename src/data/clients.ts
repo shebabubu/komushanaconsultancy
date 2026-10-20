@@ -1,13 +1,16 @@
 // Client logos shown in the "Who we work with" section on the About page.
 //
-// To add a real logo:
-//   1. Put the file in src/assets/clients/ (PNG, JPG, SVG or WebP are fine).
+// To add a client:
+//   1. Put the logo file in src/assets/clients/ (PNG, JPG, SVG or WebP are fine).
 //   2. Import it at the top of this file, e.g.
 //        import acmeLogo from "@/assets/clients/acme.png";
-//   3. Add it to the entry below:  { name: "Acme Ltd", logo: acmeLogo }
+//   3. Add an entry below:  { name: "Acme Ltd", logo: acmeLogo }
 //
-// A tile with no logo yet shows a "Client logo" placeholder, so the layout
-// looks complete at any number of entries.
+// An entry with no logo yet shows a "Client logo" placeholder tile, so the
+// layout still looks complete while logos are being collected.
+
+import limelightLogo from "@/assets/clients/limelight.png.asset.json";
+import dawinciLogo from "@/assets/clients/dawinci.png.asset.json";
 
 export interface Client {
   name: string;
@@ -15,14 +18,14 @@ export interface Client {
 }
 
 export const clients: Client[] = [
-  { name: "Client logo" },
-  { name: "Client logo" },
-  { name: "Client logo" },
-  { name: "Client logo" },
-  { name: "Client logo" },
-  { name: "Client logo" },
-  { name: "Client logo" },
-  { name: "Client logo" },
+  {
+    name: "Limelight Chemicals and Equipment Limited",
+    logo: limelightLogo,
+  },
+  {
+    name: "DaWinçi Architecture | Civil Engineering",
+    logo: dawinciLogo,
+  },
 ];
 
 export function clientLogoUrl(client: Client): string | undefined {
