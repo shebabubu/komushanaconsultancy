@@ -107,20 +107,20 @@ function About() {
           </p>
         </div>
 
-        <ul className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
+        <ul className="mt-12 flex flex-wrap items-stretch justify-center gap-4">
           {clients.map((client, i) => {
             const logo = clientLogoUrl(client);
             return (
               <li
                 key={`${client.name}-${i}`}
-                className="flex h-28 items-center justify-center rounded-xl border border-border bg-card px-6 shadow-[var(--shadow-card)]"
+                className="flex h-28 w-[240px] items-center justify-center rounded-xl border border-border bg-card px-6 shadow-[var(--shadow-card)]"
               >
                 {logo ? (
                   <img
                     src={logo}
                     alt={`${client.name} logo`}
                     loading="lazy"
-                    className="max-h-14 w-full object-contain"
+                    className="max-h-16 w-auto max-w-[180px] object-contain"
                   />
                 ) : (
                   <span className="flex flex-col items-center gap-1.5 text-[11px] uppercase tracking-[0.18em] text-muted-foreground/70">
