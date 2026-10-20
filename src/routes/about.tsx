@@ -1,6 +1,7 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight } from "lucide-react";
+import { createFileRoute } from "@tanstack/react-router";
+import { Image as ImageIcon } from "lucide-react";
 import { PageLayout } from "@/components/PageLayout";
+import { clients, clientLogoUrl } from "@/data/clients";
 import aboutImg from "@/assets/about.jpg";
 
 export const Route = createFileRoute("/about")({
@@ -95,18 +96,42 @@ function About() {
       </section>
 
       <section className="mx-auto max-w-6xl px-6 py-20">
-        <div className="rounded-2xl bg-navy p-10 text-center text-primary-foreground md:p-14">
-          <h2 className="text-3xl text-primary-foreground">Ready to formalise and grow?</h2>
-          <p className="mx-auto mt-3 max-w-xl text-primary-foreground/75">
-            Let's talk about the foundations your organisation needs next.
+        <div className="text-center">
+          <span className="text-sm font-semibold uppercase tracking-[0.18em] text-navy-soft">
+            Who we work with
+          </span>
+          <h2 className="mt-3 text-3xl md:text-4xl">Organisations we've partnered with</h2>
+          <p className="mx-auto mt-4 max-w-2xl leading-relaxed text-muted-foreground">
+            NGOs, community-based organisations and growing businesses across
+            Uganda that have trusted us to build their foundations.
           </p>
-          <Link
-            to="/contact"
-            className="mt-7 inline-flex items-center gap-2 rounded-md bg-gold px-6 py-3 text-sm font-semibold text-gold-foreground transition-opacity hover:opacity-90"
-          >
-            Book a consultation <ArrowRight className="h-4 w-4" />
-          </Link>
         </div>
+
+        <ul className="mt-12 flex flex-wrap items-stretch justify-center gap-4">
+          {clients.map((client, i) => {
+            const logo = clientLogoUrl(client);
+            return (
+              <li
+                key={`${client.name}-${i}`}
+                className="flex h-28 w-[240px] items-center justify-center rounded-xl border border-border bg-card px-6 shadow-[var(--shadow-card)]"
+              >
+                {logo ? (
+                  <img
+                    src={logo}
+                    alt={`${client.name} logo`}
+                    loading="lazy"
+                    className="max-h-16 w-auto max-w-[180px] object-contain"
+                  />
+                ) : (
+                  <span className="flex flex-col items-center gap-1.5 text-[11px] uppercase tracking-[0.18em] text-muted-foreground/70">
+                    <ImageIcon className="h-5 w-5" />
+                    Client logo
+                  </span>
+                )}
+              </li>
+            );
+          })}
+        </ul>
       </section>
     </PageLayout>
   );
