@@ -130,3 +130,22 @@
 @utility text-balance {
   text-wrap: balance;
 }
+
+@utility btn-primary {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  border-radius: var(--radius); background: var(--navy); color: var(--primary-foreground);
+  padding: 0.625rem 1.125rem; font-size: 0.875rem; font-weight: 500;
+  transition: transform .3s cubic-bezier(.22,1,.36,1), opacity .3s;
+  &:hover { transform: translateY(-2px); opacity: .92; }
+}
+@utility btn-gold {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  border-radius: var(--radius); background: var(--gold); color: var(--gold-foreground);
+  padding: 0.75rem 1.5rem; font-size: 0.875rem; font-weight: 600;
+  transition: transform .3s cubic-bezier(.22,1,.36,1);
+  &:hover { transform: translateY(-2px); }
+}
+@utility footer-heading {
+  font-family: var(--font-sans); font-size: .75rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: .18em; color: var(--gold);
+}
